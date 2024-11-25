@@ -1,0 +1,25 @@
+body{
+    background: linear-gradient(to right,#445ad8,#859cb69d);
+}
+body h1{
+    text-align: center;
+}
+button{
+    height: 50px;
+    width: 50px;
+    align-items: center;
+}
+input{
+    padding: 13px;
+    font-size: large;
+}
+table{
+    background-color: black;
+    height: 60vh;
+    padding: 20px;
+}
+.button{
+    background-color: gold;
+    color: black;
+    border-radius: 50%;
+}
