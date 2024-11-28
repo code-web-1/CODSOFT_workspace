@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+/*-----------------NAVBAR--------------*/
+.navbar{
+    color: #efffdd;
+    height: 80px;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    position: fixed;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar h1{
+    font-style: oblique;
+}
+
+h1{
+    font-size: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: #efffdd;
+}
+
+ul{
+    display: flex;
+}
+li{
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+.navbar a:hover{
+    color: #963734;
+}
+
+
+/*--------------HOME---------------*/
+.home_content span:hover{
+    transition: 0.5s;
+    font-size: larger;
+}
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+.home{
+    
+    background-image: url(IMG.jpg);
+    background-size: cover;
+}
+.home_content{
+    max-width: 700px;
+}
+.home_content h1{
+    color: #efffdd;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.home_content span{
+    color: #c51f2a;
+}
+.home_content h3{
+    font-size: 25px;
+    font-weight: 500;
+    color: #c51f2a;
+}
+.home_content p{
+    color: #efffdd;
+    font-size: 18px;
+}
+.home_content .btn-box{
+    height:  80px;
+    width: 130px;
+}
+.home_content a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 70%;
+    color: aliceblue;
+    border: 3px solid #4b17aa4f;
+    border-radius: 8px;
+    font-size: 19px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.social-media a{
+    display: inline-flex;
+    height: 40px;
+    width: 50px;
+    margin: 20px 15px 20px 0px;
+    background: transparent;
+    border: 3px #4b17aa4f solid;
+    border-radius: 60%;
+    font-size: 25px;
+    transition: 0.5s ease;
+}
+.social-media a:hover{
+    background-color: #4b17aa4f;
+    color: black;
+}
+
+/*----------------SKILLS-----------------*/
+/* General Section Style */
+.skills {
+    background-color: #111; 
+    height: 120vh;
+    padding: 0 10%;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.skills h1 {
+    color: #f5f5f5; 
+    font-size: 3.5em; 
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+/* Skill Content Box */
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px; 
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Individual Skill Item */
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
+}
+
+/* Skill Icon Style */
+.content i, .content img {
+    font-size: 3em;
+    color: #f5f5f5;
+    width: 50px;
+    height: 50px;
+    transition: color 0.3s ease;
+}
+
+.content img {
+    object-fit: contain;
+    width: 50px;
+    height: 50px;
+}
+
+.content:hover i, .content:hover img {
+    color: #ff6f61; 
+}
+
+/* Skill Name Style */
+.content div {
+    font-size: 1.5em; 
+    color: #fff;
+    flex-grow: 1;
+    font-weight: 600;
+}
+
+/* Skill Progress Bar Style */
+.skill-bar {
+    width: 100%;
+    background-color: #555; 
+    border-radius: 25px;
+    height: 15px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 25px;
+    transition: width 1s ease;
+}
+
+/* Skill Progress Bar Colors */
+.skill-progress[style*="width: 90%"] {
+    background-color: #4caf50; 
+}
+
+.skill-progress[style*="width: 75%"] {
+    background-color: #2965f1;
+}
+
+.skill-progress[style*="width: 60%"] {
+    background-color: #f7df1e; 
+}
+
+.skill-progress[style*="width: 80%"] {
+    background-color: #00599C; 
+}
+
+/* Adding a subtle glow effect on progress bars */
+.skill-progress {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
+    50% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); }
+    100% { box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
+}
+
+.content:hover .skill-progress {
+    animation: glowing 1.5s infinite; 
+}
+
+/*------------Project and  achievement------------*/
+.pro_achieve {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    padding: 80px 10%;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+/* Gradient effect for title */
+.pro_achieve h1 {
+    font-size: 3.5em;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #f39c12, #e74c3c);
+    color: transparent;
+    background-clip: text; 
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Content Box */
+.pro_achieve-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: stretch; 
+}
+
+/* Individual Box Styling */
+.project-box {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 15px;
+    padding: 25px;
+    width: 30%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    position: relative;
+    overflow: hidden; 
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
+    margin-bottom: 30px;
+}
+
+/* Hover Effect on Project Box */
+.project-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Box Title Style */
+.project-box h4 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #f39c12; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect on Box Title */
+.project-box:hover h4 {
+    color: #e74c3c; 
+}
+
+/* Box Description Style */
+.project-box p {
+    font-size: 1.1em;
+    color: #ecf0f1;
+    line-height: 1.8;
+    transition: color 0.3s ease;
+}
+
+
+.project-box:hover p {
+    color: #ecf0f1;
+}
+
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-box {
+    animation: fadeIn 0.7s ease-out forwards; 
+}
+
+
+/*---------------CONTACT-----------------*/
+
+.contact {
+    background: #f0f4f8; 
+    padding: 80px 10%;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contact Title */
+.contact h1 {
+    font-size: 3.5em;
+    margin-bottom: 50px;
+    color: #2c3e50;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #2980b9, #6bb3d4);
+    color: transparent;
+    background-clip: text;
+    animation: slideIn 1s ease-out;
+}
+
+/* Slide-in Animation for Contact Title */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Contact Form Styling */
+.contact-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Fade-in Animation for Form */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Input Fields and Textarea */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #34495e; 
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 14px;
+    font-size: 1.1em;
+    border: 2px solid #bdc3c7; 
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Input and Textarea Focus Effects */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 8px rgba(41, 128, 185, 0.6);
+}
+
+/* Submit Button */
+.btn-send {
+    background-color: #2980b9;
+    color: white;
+    font-size: 1.3em;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 50%;
+    align-self: center;
+}
+
+.btn-send:hover {
+    background-color: #3498db; 
+    transform: scale(1.05); 
+}
